@@ -60,25 +60,32 @@ namespace WpfApp4
         private void Button_Click_4(object sender, RoutedEventArgs e)
         {
             double dumA = Convert.ToDouble(dum.Text);
-            double d = 0.025;
-            double metA = dumA * d;
-            met.Text = dum.ToString();
+            //double d = 0.025;
+            //double metA = dumA * d;
+            met.Text = Convert.ToString(dumA * 0.025);
         }
 
         private void Button_Click_5(object sender, RoutedEventArgs e)
         {
             double funA = Convert.ToDouble(fun.Text);
-            double f = 0.3;
-            double metfunA = funA * f;
-            metfun.Text = funA.ToString();
+            //double f = 0.3;
+            //double metfunA = funA * f;
+            metfun.Text = Convert.ToString(funA * 0.3);
+            
         }
 
         private void Button_Click_6(object sender, RoutedEventArgs e)
         {
             double milA = Convert.ToDouble(mil.Text);
-            double m = 1609.34;
-            double summilA = milA * m;
-            summil.Text = milA.ToString();
+            //double m = 1609.34;
+            //double summilA = milA * m;
+            summil.Text = Convert.ToString(milA * 1609.34);
+        }
+
+        private void Button_Click_7(object sender, RoutedEventArgs e)
+        {
+            double verstA = Convert.ToDouble(verst.Text);
+            sumverst.Text = Convert.ToString(verstA * 2.13);
         }
     }
 }
