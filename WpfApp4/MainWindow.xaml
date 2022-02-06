@@ -112,13 +112,47 @@
                                 <ColumnDefinition Width="Auto"></ColumnDefinition>
                                 <ColumnDefinition></ColumnDefinition>
                             </Grid.ColumnDefinitions>
-                            <Label Content="Дюймы в метры"/>
+                            <Label Content="Введите дюймы"/>
                             <TextBox   x:Name="dum" Grid.Row="0" Grid.Column="1" Margin="3"/>
                             <Button Content="Рассчитать" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2" Margin="10,3" Click="Button_Click_4"/>
                             <Label Content="Результат" Grid.Row="3" Grid.Column="0"/>
                             <TextBox   x:Name="met" Grid.Row="2" Grid.Column="1" Margin="3" IsReadOnly="True"/>
-
-
+                        </Grid>
+                    </GroupBox>
+                    <GroupBox Header="Футы в метр" Margin="10" Padding="2" BorderThickness="2" BorderBrush="Blue">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition/>
+                                                            </Grid.ColumnDefinitions>
+                            <Label Content="Введите фунты" />
+                            <TextBox x:Name="fun" Grid.Row="0" Grid.Column="1" Margin="3"/>
+                            <Button Content="Рассчитать" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2" Margin="10,3" Click="Button_Click_5"/>
+                            <Label Content="Результат" Grid.Row="3" Grid.Column="0"/>
+                            <TextBox   x:Name="metfun" Grid.Row="2" Grid.Column="1" Margin="3" IsReadOnly="True"/>
+                        </Grid>
+                    </GroupBox>
+                    <GroupBox Header="Мили в метры" Margin="10" Padding="2" BorderThickness="2" BorderBrush="Green">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition/>
+                              </Grid.ColumnDefinitions>
+                            <Label Content="Введите мили" />
+                            <TextBox x:Name="mil" Grid.Row="0" Grid.Column="1" Margin="3"/>
+                            <Button Content="Результат" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2" Margin="10,3" Click="Button_Click_6"/>
+                            <Label Content="Результат" Grid.Row="3" Grid.Column="0"/>
+                            <TextBox   x:Name="summil" Grid.Row="2" Grid.Column="1" Margin="3" IsReadOnly="True"/>
                         </Grid>
                     </GroupBox>
                     
